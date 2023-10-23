@@ -6,9 +6,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HomeController {
-	@RequestMapping("home")
+	@RequestMapping("hello")
+//	@ResponseBody
 	public String home() {
-		System.out.println("in home");
-		return "home.jsp";
+		System.out.println("in home of code for not showing why");
+		return "Home.jsp";
 	}
 }
