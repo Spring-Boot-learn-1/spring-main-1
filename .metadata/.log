@@ -5926,3 +5926,122 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-26 19:37:24.892
 !MESSAGE Classpath changed for project: FirstProject-6
+
+!ENTRY org.eclipse.ui 4 0 2023-10-26 19:47:54.175
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:369)
+	at org.eclipse.swt.widgets.Composite.layout(Composite.java:697)
+	at org.springsource.ide.eclipse.commons.livexp.ui.util.ReflowUtil.reflowParents(ReflowUtil.java:57)
+	at org.springsource.ide.eclipse.commons.livexp.ui.ReflowableSection.reflow(ReflowableSection.java:38)
+	at org.springframework.ide.eclipse.boot.wizard.SelectedSection.applyFilter(SelectedSection.java:97)
+	at org.springframework.ide.eclipse.boot.wizard.SelectedDependenciesSection.onFilter(SelectedDependenciesSection.java:68)
+	at org.springframework.ide.eclipse.boot.wizard.SelectedDependenciesSection.lambda$0(SelectedDependenciesSection.java:62)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.changed(LiveExpression.java:137)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:81)
+	at org.springframework.ide.eclipse.boot.wizard.SelectedDependenciesSection.lambda$1(SelectedDependenciesSection.java:97)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.changed(LiveExpression.java:137)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveExpression.refresh(LiveExpression.java:81)
+	at org.springsource.ide.eclipse.commons.livexp.core.LiveVariable.setValue(LiveVariable.java:46)
+	at org.springframework.ide.eclipse.boot.wizard.CheckBoxesSection$CheckBox$2.handleSelection(CheckBoxesSection.java:183)
+	at org.springframework.ide.eclipse.boot.wizard.CheckBoxesSection$CheckBox$2.widgetSelected(CheckBoxesSection.java:174)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:130)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-26 19:47:56.359
+!MESSAGE Classpath changed for project: FirstProject-7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-26 19:47:56.360
+!MESSAGE Boot project ADDED: FirstProject-7
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-10-26 19:47:56.380
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-10-26 19:47:56.380
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-10-26 19:47:56.381
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-10-26 19:47:56.382
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-10-26 19:47:56.385
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-10-26 19:47:56.387
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-10-26 19:50:56.333
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-10-26 20:25:14.261
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-10-26 20:25:14.262
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-10-26 20:25:14.262
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-10-26 20:25:14.263
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-10-26 20:25:14.265
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-10-26 20:25:14.267
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-10-26 20:25:39.075
+!MESSAGE Classpath changed for project: FirstProject-7
