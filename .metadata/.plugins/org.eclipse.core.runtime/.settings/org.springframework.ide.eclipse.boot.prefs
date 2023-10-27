@@ -1,12 +1,12 @@
 eclipse.preferences.version=1
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=5
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=FirstProject-5
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=8
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=FirstProject-8
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=3.1.5
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=Demo project for Spring Boot
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.groupId=com.example.vishal
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.javaVersion=17
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.language=java
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=FirstProject-5
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=FirstProject-8
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packageName=com.example.demo
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packaging=jar
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.type=MAVEN
