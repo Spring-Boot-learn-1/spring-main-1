@@ -33,9 +33,7 @@ public class HomeController {
 		ModelAndView mv=new ModelAndView();
 		mv.setViewName("home");
 		mv.addObject("al", al);
-	
 		System.out.println(al.toString());
-	
 		return mv;
 	}
 }
