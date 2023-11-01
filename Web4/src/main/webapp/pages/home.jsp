@@ -13,5 +13,9 @@
 		<label>laptop: </label><input type="text" name="laptop"><br>
 		<input type="submit" value="submit">
 	</form>
+	<form action="getUser">
+		<label>id: </label><input type="number" name="id"><br>
+		<input type="submit" value="submit">
+	</form>
 </body>
 </html>
