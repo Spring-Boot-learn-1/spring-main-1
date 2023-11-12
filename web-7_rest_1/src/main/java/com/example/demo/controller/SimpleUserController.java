@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +33,14 @@ public class SimpleUserController {
 		else {
 			return "";
 		}
+	}
+	@RequestMapping("/getAllUsers")
+	@ResponseBody
+	public List<SimpleUser> getAllUsers() {
+		
+		List<SimpleUser> sus=userdataobject.findAll();
+		System.out.println(sus);
+		return sus;
 	}
 	
 }
