@@ -13,4 +13,5 @@
     <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
     <fullyQualifiedTypeName name="com.example.demo.model.User"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+    <fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
 </qualifiedTypeNameHistroy>
