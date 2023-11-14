@@ -1,7 +1,11 @@
 package com.example.demo.controller;
 
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
@@ -13,21 +17,33 @@ import com.example.demo.model.RestUser;
 public class MainController {
 	@Autowired
 	RestUserRepo dataobjectru;
-	@RequestMapping("/")
+	@RequestMapping("/home")
 	public String home()
 	{
-		
 		return "jsppages/home.jsp";
 	}
 	@RequestMapping("/addUser")
 	public ModelAndView addUser(ModelAndView mv,RestUser ru) {
 		dataobjectru.save(ru);
-		mv.setViewName("jsppages/home.jsp.jsp");
+		mv.setViewName("jsppages/home.jsp");
 		return mv;
 	}
-	@RequestMapping("/getUser")
+	@RequestMapping("/getUser/{id}")
 	@ResponseBody
-	public String getUser() {
-		return "";
+	public RestUser getUser(@PathVariable int id) {
+		System.out.println("123 "+id);
+		Optional<RestUser> ru=dataobjectru.findById(id);
+		if(ru.isEmpty()) {
+			return new RestUser();
+		}
+		else {
+			return ru.get();
+		}
+	}
+	@RequestMapping("/getUsers")
+	@ResponseBody
+	public List<RestUser> getUsers() {
+		
+		return dataobjectru.findAll();
 	}
 }
