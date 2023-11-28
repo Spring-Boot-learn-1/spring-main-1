@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-hello world
+hello world1
+<a href="/addUser">addUser</a>
+<a href="/getUser">getUser</a>
 </body>
 </html>

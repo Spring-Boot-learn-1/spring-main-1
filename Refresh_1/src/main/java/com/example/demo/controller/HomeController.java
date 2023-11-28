@@ -11,9 +11,7 @@ public class HomeController {
 //	return "home.jsp";
 //}
 @RequestMapping("/home")
-public String home() {
-	System.out.println("hitting");
-	return "home.jsp";
+public String home(){
+	return "home";
 }
-
 }
