@@ -1284,3 +1284,9 @@ Binding(CTRL+SHIFT+C,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-11-28 21:26:16.689
+!MESSAGE Classpath changed for project: Refresh_1-2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-11-28 21:26:16.692
+!MESSAGE Boot project ADDED: Refresh_1-2
