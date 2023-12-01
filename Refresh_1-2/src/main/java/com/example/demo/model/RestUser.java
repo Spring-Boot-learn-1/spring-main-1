@@ -9,12 +9,6 @@ private int id;
 private String name;
 private String password;
 private String histexteditor;
-public RestUser(int id,String name,String password,String histexteditor){
-	this.id=id;
-	this.name=name;
-	this.password=password;
-	this.histexteditor=histexteditor;
-}
 public int getId() {
 	return id;
 }
